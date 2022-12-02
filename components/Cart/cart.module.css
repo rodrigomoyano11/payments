@@ -1,0 +1,43 @@
+.cartContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.product {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.productInfo {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  flex: 1;
+}
