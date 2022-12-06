@@ -27,8 +27,6 @@ const Home = () => {
             <Product key={product.id} {...product} />
           ))}
         </ul>
-
-        <Cart></Cart>
       </section>
     </>
   )
