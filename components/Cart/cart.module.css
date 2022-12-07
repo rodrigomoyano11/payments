@@ -3,8 +3,16 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  padding: 1.5rem;
   font-weight: 600;
+  color: #bb6363;
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  color: #bb6363;
 }
 
 .cartContainer {
@@ -13,6 +21,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1rem;
+  background-color: #f1d5d5;
+  border-radius: 1rem;
+  margin: 1rem;
+  gap: 1rem;
 }
 
 .products {
@@ -66,12 +79,14 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border: 1px solid #000;
+  color: #bb6363;
+  border: 2px solid #bb6363;
   border-radius: 1rem;
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .paymentButtons {
@@ -86,4 +101,57 @@
   font-weight: 600;
   margin: 0;
   text-align: center;
+}
+
+.total {
+  color: #bb6363;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.totalText {
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-align: end;
+
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.removeButton,
+.clearCartButton,
+.checkoutButton {
+  all: unset;
+  cursor: pointer;
+  background-color: #f1d5d5;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #bb6363;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkoutButton {
+  background-color: #bb6363;
+  color: #fff;
+  width: 60%;
+}
+
+.clearCartButton {
+  width: 40%;
+  background-color: #fff;
 }

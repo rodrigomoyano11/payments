@@ -12,22 +12,7 @@ export const Header = () => {
     <>
       <header className={styles.header}>
         <h1>Payment Methods App</h1>
-
-        <button
-          className={styles.cartButton}
-          onClick={() => setShowCart((prevState) => !prevState)}
-        >
-          Cart
-        </button>
       </header>
-
-      {showCart && (
-        <div className={styles.cartModal}>
-          <div className={styles.cartModalContent}>
-            <Cart />
-          </div>
-        </div>
-      )}
     </>
   )
 }

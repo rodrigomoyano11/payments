@@ -19,15 +19,19 @@ const Home = () => {
     <>
       <Header></Header>
 
-      <section className={styles.productsSection}>
-        <h1 className={styles.title}>Products</h1>
+      <div className={styles.sections}>
+        <section className={styles.productsSection}>
+          <ul className={styles.products}>
+            {products.map((product) => (
+              <Product key={product.id} {...product} />
+            ))}
+          </ul>
+        </section>
 
-        <ul className={styles.products}>
-          {products.map((product) => (
-            <Product key={product.id} {...product} />
-          ))}
-        </ul>
-      </section>
+        <section className={styles.cartSection}>
+          <Cart />
+        </section>
+      </div>
     </>
   )
 }

@@ -147,7 +147,7 @@ export const Cart = () => {
                     className={styles.removeButton}
                     onClick={() => removeFromCart(product)}
                   >
-                    Delete Product
+                    Delete
                   </button>
                 </div>
               ))}
@@ -156,23 +156,26 @@ export const Cart = () => {
 
           {cart.length > 0 && (
             <div className={styles.total}>
-              <p className={styles.totalText}>
-                Total: {convertToCurrency(totalInCents)}
-              </p>
+              <div className={styles.totalText}>
+                <span>Total</span>
+                <span>{convertToCurrency(totalInCents)}</span>
+              </div>
 
-              <button
-                className={styles.checkoutButton}
-                onClick={() => setShowPayments(true)}
-              >
-                Checkout
-              </button>
+              <div className={styles.buttons}>
+                <button
+                  className={styles.clearCartButton}
+                  onClick={() => clearCart()}
+                >
+                  Clear cart
+                </button>
 
-              <button
-                className={styles.clearCartButton}
-                onClick={() => clearCart()}
-              >
-                Clear cart
-              </button>
+                <button
+                  className={styles.checkoutButton}
+                  onClick={() => setShowPayments(true)}
+                >
+                  Checkout
+                </button>
+              </div>
             </div>
           )}
         </>
