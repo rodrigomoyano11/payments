@@ -4,7 +4,7 @@ import { Product } from 'components/Product/product.component'
 import { useEffect, useState } from 'react'
 import { Product as ProductType } from 'types/entities/Product'
 import { api } from 'utils/api/api.client'
-import styles from '/styles/home.module.css'
+import styles from 'styles/home.module.css'
 
 const Home = () => {
   const [products, setProducts] = useState<ProductType[]>([])
